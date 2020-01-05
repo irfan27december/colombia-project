@@ -11,6 +11,8 @@ import org.openqa.selenium.support.PageFactory;
 import org.seleniumhq.jetty9.servlet.jmx.HolderMBean;
 import org.testng.Assert;
 
+import com.colombia.utilities.ReadProperties;
+
 /**
  * @author irfan
  *
@@ -19,26 +21,37 @@ import org.testng.Assert;
 
 public class EaglePortalLoginPage{
 	WebDriver driver;
+	ReadProperties properties = new ReadProperties();
 
 	//Constructor
 	public EaglePortalLoginPage(WebDriver driver){
-		this.driver=driver;
-		//PageFactory.initElements(driver, HomePage.class);
+		/*this.driver=driver;
+		PageFactory.initElements(driver, EaglePortalLoginPage.class);*/
+		this.driver = driver;
+		PageFactory.initElements(driver, this);
 	}
-	
+
 	//Using FindBy for locating elements
-	//@FindBy(linkText = "Sign in") WebElement signInLink;	
-	@FindBy(xpath = "//input[@id='textfield-1025-inputEl']") WebElement eagleUserNameField;	
-	@FindBy(xpath = "//input[@id='textfield-1026-inputEl']") WebElement passwordField;
-	@FindBy(xpath = "//span[@id='button-1031-btnEl']") WebElement loginButton;
-	
-	
-	//h2[contains(text(),'Login to your account')]
-	
-	public String verifyHomePageTitle(){
-		System.out.println("Title is  " + driver.getTitle());
-		//Assert.assertEquals(actual, expected);
+	@FindBy(xpath = "//input[@id='textfield-1025-inputEl']") private WebElement eagleUserNameField;	
+	@FindBy(xpath = "//input[@id='textfield-1026-inputEl']") private WebElement eaglePasswordField;
+	@FindBy(xpath = "//span[@id='button-1031-btnEl']") private WebElement loginButton;
+
+
+	//Method to login Eagle Portal
+	public void loginEaglePortal(String userName, String password){
+		eagleUserNameField.clear();
+		eagleUserNameField.click();
+		eagleUserNameField.sendKeys(userName);
+		eaglePasswordField.clear();
+		eaglePasswordField.click();
+		eaglePasswordField.sendKeys(password);
+		loginButton.click();		
+	}
+
+
+	public String verifyLoginPageTitle() {
 		return driver.getTitle();
 	}
-	
+
+
 }

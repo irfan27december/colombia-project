@@ -5,10 +5,12 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 
+import com.colombia.pages.EaglePortalLoginPage;
 import com.colombia.utilities.ReadProperties;
 
 
@@ -22,6 +24,7 @@ import com.colombia.utilities.ReadProperties;
 public class BaseTest {
 	public static WebDriver driver = null;
 	ReadProperties properties = new ReadProperties();
+	protected EaglePortalLoginPage eaglePortalLoginPage;
 	public static final String testDataExcelFileName = "testdata.xlsx";
 	/**
 	 * @author irfan
@@ -42,6 +45,12 @@ public class BaseTest {
 
 	}
 
+	
+	@BeforeClass
+	public void initialize() {
+		eaglePortalLoginPage = new EaglePortalLoginPage(driver);
+		
+	}
 	
 	//Method to close browser
 	@AfterSuite
