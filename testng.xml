@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Eagle Portal Automation Suite">
+<suite name="ChromeSuite" parallel="true">
 	<listeners>
 		<listener class-name="com.colombia.listeners.TestListener" />
 	</listeners>
@@ -8,7 +8,7 @@
 	<parameter name="browser" value="chrome"></parameter>
 	<parameter name="driverPath" value="C:\\Users\\irfan\\git\\colombia-project\\drivers\\chromedriver.exe"></parameter>
 
-	<test name="Eagle Portal Automation Tests">
+	<test name="Colombia System Automation Tests">
 		<classes>
 			<class name="com.colombia.seleniumtests.EaglePortalLoginTest" />
 			<class name="com.colombia.sampletests.Test1" />

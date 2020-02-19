@@ -1,0 +1,661 @@
+<html>
+<head>
+<title>TestNG:  Eagle Portal Automation Tests</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Eagle Portal Automation Tests</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Feb 19 12:51:28 IST 2020</td>
+</tr>
+<tr><td>Total time:</td><td>0 seconds (98 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.colombia.seleniumtests.EaglePortalLoginTest.accessEagleLoginInPage()'><b>accessEagleLoginInPage</b><br>Test class: com.colombia.seleniumtests.EaglePortalLoginTest</td>
+<td><div><pre>java.lang.NoClassDefFoundError: Could not initialize class com.colombia.extentreports.ExtentTestManager
+	at com.colombia.listeners.TestListener.onTestStart(TestListener.java:16)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 7 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2144665602", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2144665602'><pre>java.lang.NoClassDefFoundError: Could not initialize class com.colombia.extentreports.ExtentTestManager
+	at com.colombia.listeners.TestListener.onTestStart(TestListener.java:16)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1739)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1714)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:640)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.colombia.seleniumtests.EaglePortalLoginTest@1794d431</td></tr>
+<tr>
+<td title='com.colombia.seleniumtests.EaglePortalLoginTest.accessEagleLoginInPage()'><b>accessEagleLoginInPage</b><br>Test class: com.colombia.seleniumtests.EaglePortalLoginTest</td>
+<td><div><pre>java.lang.NoClassDefFoundError: Could not initialize class com.colombia.extentreports.ExtentTestManager
+	at com.colombia.listeners.TestListener.onTestFailure(TestListener.java:31)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 7 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1916575798", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1916575798'><pre>java.lang.NoClassDefFoundError: Could not initialize class com.colombia.extentreports.ExtentTestManager
+	at com.colombia.listeners.TestListener.onTestFailure(TestListener.java:31)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1731)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1714)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.colombia.seleniumtests.EaglePortalLoginTest@1794d431</td></tr>
+<tr>
+<td title='com.colombia.seleniumtests.EaglePortalLoginTest.eagleFailedTest()'><b>eagleFailedTest</b><br>Test class: com.colombia.seleniumtests.EaglePortalLoginTest</td>
+<td><div><pre>java.lang.NoClassDefFoundError: Could not initialize class com.colombia.extentreports.ExtentTestManager
+	at com.colombia.listeners.TestListener.onTestStart(TestListener.java:16)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 7 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace633240419", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace633240419'><pre>java.lang.NoClassDefFoundError: Could not initialize class com.colombia.extentreports.ExtentTestManager
+	at com.colombia.listeners.TestListener.onTestStart(TestListener.java:16)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1739)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1714)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:640)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.colombia.seleniumtests.EaglePortalLoginTest@1794d431</td></tr>
+<tr>
+<td title='com.colombia.seleniumtests.EaglePortalLoginTest.eagleFailedTest()'><b>eagleFailedTest</b><br>Test class: com.colombia.seleniumtests.EaglePortalLoginTest</td>
+<td><div><pre>java.lang.NoClassDefFoundError: Could not initialize class com.colombia.extentreports.ExtentTestManager
+	at com.colombia.listeners.TestListener.onTestFailure(TestListener.java:31)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 7 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace685558284", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace685558284'><pre>java.lang.NoClassDefFoundError: Could not initialize class com.colombia.extentreports.ExtentTestManager
+	at com.colombia.listeners.TestListener.onTestFailure(TestListener.java:31)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1731)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1714)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.colombia.seleniumtests.EaglePortalLoginTest@1794d431</td></tr>
+<tr>
+<td title='com.colombia.sampletests.Test1.test1()'><b>test1</b><br>Test class: com.colombia.sampletests.Test1</td>
+<td><div><pre>java.lang.Error: Unresolved compilation problems: 
+	&apos;&lt;&gt;&apos; operator is not allowed for source level below 1.7
+	Lambda expressions are allowed only at source level 1.8 or above
+	Cannot refer to the non-final local variable k defined in an enclosing scope
+	Lambda expressions are allowed only at source level 1.8 or above
+	Cannot refer to the non-final local variable k defined in an enclosing scope
+	Lambda expressions are allowed only at source level 1.8 or above
+	Cannot refer to the non-final local variable k defined in an enclosing scope
+
+	at com.aventstack.extentreports.configuration.ConfigMap.&lt;init&gt;(ConfigMap.java:12)
+	at com.aventstack.extentreports.reporter.ExtentHtmlReporter.loadDefaultConfig(ExtentHtmlReporter.java:71)
+	at com.aventstack.extentreports.reporter.ExtentHtmlReporter.&lt;init&gt;(ExtentHtmlReporter.java:57)
+	at com.aventstack.extentreports.reporter.ExtentHtmlReporter.&lt;init&gt;(ExtentHtmlReporter.java:61)
+	at com.colombia.extentreports.ExtentManager.createInstance(ExtentManager.java:28)
+	at com.colombia.extentreports.ExtentManager.getInstance(ExtentManager.java:20)
+	at com.colombia.extentreports.ExtentTestManager.&lt;clinit&gt;(ExtentTestManager.java:11)
+	at com.colombia.listeners.TestListener.onTestStart(TestListener.java:16)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 7 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1171802656", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1171802656'><pre>java.lang.Error: Unresolved compilation problems: 
+	&apos;&lt;&gt;&apos; operator is not allowed for source level below 1.7
+	Lambda expressions are allowed only at source level 1.8 or above
+	Cannot refer to the non-final local variable k defined in an enclosing scope
+	Lambda expressions are allowed only at source level 1.8 or above
+	Cannot refer to the non-final local variable k defined in an enclosing scope
+	Lambda expressions are allowed only at source level 1.8 or above
+	Cannot refer to the non-final local variable k defined in an enclosing scope
+
+	at com.aventstack.extentreports.configuration.ConfigMap.&lt;init&gt;(ConfigMap.java:12)
+	at com.aventstack.extentreports.reporter.ExtentHtmlReporter.loadDefaultConfig(ExtentHtmlReporter.java:71)
+	at com.aventstack.extentreports.reporter.ExtentHtmlReporter.&lt;init&gt;(ExtentHtmlReporter.java:57)
+	at com.aventstack.extentreports.reporter.ExtentHtmlReporter.&lt;init&gt;(ExtentHtmlReporter.java:61)
+	at com.colombia.extentreports.ExtentManager.createInstance(ExtentManager.java:28)
+	at com.colombia.extentreports.ExtentManager.getInstance(ExtentManager.java:20)
+	at com.colombia.extentreports.ExtentTestManager.&lt;clinit&gt;(ExtentTestManager.java:11)
+	at com.colombia.listeners.TestListener.onTestStart(TestListener.java:16)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1739)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1714)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:640)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.colombia.sampletests.Test1@42e26948</td></tr>
+<tr>
+<td title='com.colombia.sampletests.Test1.test1()'><b>test1</b><br>Test class: com.colombia.sampletests.Test1</td>
+<td><div><pre>java.lang.NoClassDefFoundError: Could not initialize class com.colombia.extentreports.ExtentTestManager
+	at com.colombia.listeners.TestListener.onTestFailure(TestListener.java:31)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 7 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1391624125", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1391624125'><pre>java.lang.NoClassDefFoundError: Could not initialize class com.colombia.extentreports.ExtentTestManager
+	at com.colombia.listeners.TestListener.onTestFailure(TestListener.java:31)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1731)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1714)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.colombia.sampletests.Test1@42e26948</td></tr>
+<tr>
+<td title='com.colombia.sampletests.Test2.test1()'><b>test1</b><br>Test class: com.colombia.sampletests.Test2</td>
+<td><div><pre>java.lang.NoClassDefFoundError: Could not initialize class com.colombia.extentreports.ExtentTestManager
+	at com.colombia.listeners.TestListener.onTestStart(TestListener.java:16)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 7 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace79782883", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace79782883'><pre>java.lang.NoClassDefFoundError: Could not initialize class com.colombia.extentreports.ExtentTestManager
+	at com.colombia.listeners.TestListener.onTestStart(TestListener.java:16)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1739)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1714)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:640)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.colombia.sampletests.Test2@57baeedf</td></tr>
+<tr>
+<td title='com.colombia.sampletests.Test2.test1()'><b>test1</b><br>Test class: com.colombia.sampletests.Test2</td>
+<td><div><pre>java.lang.NoClassDefFoundError: Could not initialize class com.colombia.extentreports.ExtentTestManager
+	at com.colombia.listeners.TestListener.onTestFailure(TestListener.java:31)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 7 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1250121181", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1250121181'><pre>java.lang.NoClassDefFoundError: Could not initialize class com.colombia.extentreports.ExtentTestManager
+	at com.colombia.listeners.TestListener.onTestFailure(TestListener.java:31)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1731)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1714)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.colombia.sampletests.Test2@57baeedf</td></tr>
+<tr>
+<td title='com.colombia.sampletests.Test1.test2()'><b>test2</b><br>Test class: com.colombia.sampletests.Test1</td>
+<td><div><pre>java.lang.NoClassDefFoundError: Could not initialize class com.colombia.extentreports.ExtentTestManager
+	at com.colombia.listeners.TestListener.onTestStart(TestListener.java:16)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 7 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1292738535", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1292738535'><pre>java.lang.NoClassDefFoundError: Could not initialize class com.colombia.extentreports.ExtentTestManager
+	at com.colombia.listeners.TestListener.onTestStart(TestListener.java:16)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1739)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1714)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:640)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.colombia.sampletests.Test1@42e26948</td></tr>
+<tr>
+<td title='com.colombia.sampletests.Test1.test2()'><b>test2</b><br>Test class: com.colombia.sampletests.Test1</td>
+<td><div><pre>java.lang.NoClassDefFoundError: Could not initialize class com.colombia.extentreports.ExtentTestManager
+	at com.colombia.listeners.TestListener.onTestFailure(TestListener.java:31)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 7 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace205721196", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace205721196'><pre>java.lang.NoClassDefFoundError: Could not initialize class com.colombia.extentreports.ExtentTestManager
+	at com.colombia.listeners.TestListener.onTestFailure(TestListener.java:31)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1731)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1714)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.colombia.sampletests.Test1@42e26948</td></tr>
+<tr>
+<td title='com.colombia.sampletests.Test2.test2()'><b>test2</b><br>Test class: com.colombia.sampletests.Test2</td>
+<td><div><pre>java.lang.NoClassDefFoundError: Could not initialize class com.colombia.extentreports.ExtentTestManager
+	at com.colombia.listeners.TestListener.onTestStart(TestListener.java:16)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 7 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace51554940", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace51554940'><pre>java.lang.NoClassDefFoundError: Could not initialize class com.colombia.extentreports.ExtentTestManager
+	at com.colombia.listeners.TestListener.onTestStart(TestListener.java:16)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1739)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1714)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:640)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.colombia.sampletests.Test2@57baeedf</td></tr>
+<tr>
+<td title='com.colombia.sampletests.Test2.test2()'><b>test2</b><br>Test class: com.colombia.sampletests.Test2</td>
+<td><div><pre>java.lang.NoClassDefFoundError: Could not initialize class com.colombia.extentreports.ExtentTestManager
+	at com.colombia.listeners.TestListener.onTestFailure(TestListener.java:31)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 7 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1399794302", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1399794302'><pre>java.lang.NoClassDefFoundError: Could not initialize class com.colombia.extentreports.ExtentTestManager
+	at com.colombia.listeners.TestListener.onTestFailure(TestListener.java:31)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1731)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1714)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.colombia.sampletests.Test2@57baeedf</td></tr>
+<tr>
+<td title='com.colombia.sampletests.Test1.test3()'><b>test3</b><br>Test class: com.colombia.sampletests.Test1</td>
+<td><div><pre>java.lang.NoClassDefFoundError: Could not initialize class com.colombia.extentreports.ExtentTestManager
+	at com.colombia.listeners.TestListener.onTestStart(TestListener.java:16)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 7 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1924949331", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1924949331'><pre>java.lang.NoClassDefFoundError: Could not initialize class com.colombia.extentreports.ExtentTestManager
+	at com.colombia.listeners.TestListener.onTestStart(TestListener.java:16)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1739)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1714)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:640)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.colombia.sampletests.Test1@42e26948</td></tr>
+<tr>
+<td title='com.colombia.sampletests.Test1.test3()'><b>test3</b><br>Test class: com.colombia.sampletests.Test1</td>
+<td><div><pre>java.lang.NoClassDefFoundError: Could not initialize class com.colombia.extentreports.ExtentTestManager
+	at com.colombia.listeners.TestListener.onTestFailure(TestListener.java:31)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 7 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1721246982", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1721246982'><pre>java.lang.NoClassDefFoundError: Could not initialize class com.colombia.extentreports.ExtentTestManager
+	at com.colombia.listeners.TestListener.onTestFailure(TestListener.java:31)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1731)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1714)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.colombia.sampletests.Test1@42e26948</td></tr>
+<tr>
+<td title='com.colombia.sampletests.Test2.test3()'><b>test3</b><br>Test class: com.colombia.sampletests.Test2</td>
+<td><div><pre>java.lang.NoClassDefFoundError: Could not initialize class com.colombia.extentreports.ExtentTestManager
+	at com.colombia.listeners.TestListener.onTestStart(TestListener.java:16)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 7 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1892627171", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1892627171'><pre>java.lang.NoClassDefFoundError: Could not initialize class com.colombia.extentreports.ExtentTestManager
+	at com.colombia.listeners.TestListener.onTestStart(TestListener.java:16)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1739)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1714)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:640)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.colombia.sampletests.Test2@57baeedf</td></tr>
+<tr>
+<td title='com.colombia.sampletests.Test2.test3()'><b>test3</b><br>Test class: com.colombia.sampletests.Test2</td>
+<td><div><pre>java.lang.NoClassDefFoundError: Could not initialize class com.colombia.extentreports.ExtentTestManager
+	at com.colombia.listeners.TestListener.onTestFailure(TestListener.java:31)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 7 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1515833950", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1515833950'><pre>java.lang.NoClassDefFoundError: Could not initialize class com.colombia.extentreports.ExtentTestManager
+	at com.colombia.listeners.TestListener.onTestFailure(TestListener.java:31)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1731)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1714)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.colombia.sampletests.Test2@57baeedf</td></tr>
+<tr>
+<td title='com.colombia.sampletests.Test1.test4()'><b>test4</b><br>Test class: com.colombia.sampletests.Test1</td>
+<td><div><pre>java.lang.NoClassDefFoundError: Could not initialize class com.colombia.extentreports.ExtentTestManager
+	at com.colombia.listeners.TestListener.onTestStart(TestListener.java:16)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 7 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1272883899", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1272883899'><pre>java.lang.NoClassDefFoundError: Could not initialize class com.colombia.extentreports.ExtentTestManager
+	at com.colombia.listeners.TestListener.onTestStart(TestListener.java:16)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1739)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1714)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:640)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.colombia.sampletests.Test1@42e26948</td></tr>
+<tr>
+<td title='com.colombia.sampletests.Test1.test4()'><b>test4</b><br>Test class: com.colombia.sampletests.Test1</td>
+<td><div><pre>java.lang.NoClassDefFoundError: Could not initialize class com.colombia.extentreports.ExtentTestManager
+	at com.colombia.listeners.TestListener.onTestFailure(TestListener.java:31)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 7 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1816725203", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1816725203'><pre>java.lang.NoClassDefFoundError: Could not initialize class com.colombia.extentreports.ExtentTestManager
+	at com.colombia.listeners.TestListener.onTestFailure(TestListener.java:31)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1731)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1714)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.colombia.sampletests.Test1@42e26948</td></tr>
+<tr>
+<td title='com.colombia.sampletests.Test2.test4()'><b>test4</b><br>Test class: com.colombia.sampletests.Test2</td>
+<td><div><pre>java.lang.NoClassDefFoundError: Could not initialize class com.colombia.extentreports.ExtentTestManager
+	at com.colombia.listeners.TestListener.onTestStart(TestListener.java:16)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 7 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1704491411", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1704491411'><pre>java.lang.NoClassDefFoundError: Could not initialize class com.colombia.extentreports.ExtentTestManager
+	at com.colombia.listeners.TestListener.onTestStart(TestListener.java:16)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1739)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1714)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:640)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.colombia.sampletests.Test2@57baeedf</td></tr>
+<tr>
+<td title='com.colombia.sampletests.Test2.test4()'><b>test4</b><br>Test class: com.colombia.sampletests.Test2</td>
+<td><div><pre>java.lang.NoClassDefFoundError: Could not initialize class com.colombia.extentreports.ExtentTestManager
+	at com.colombia.listeners.TestListener.onTestFailure(TestListener.java:31)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 7 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1896305732", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1896305732'><pre>java.lang.NoClassDefFoundError: Could not initialize class com.colombia.extentreports.ExtentTestManager
+	at com.colombia.listeners.TestListener.onTestFailure(TestListener.java:31)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1731)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1714)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.colombia.sampletests.Test2@57baeedf</td></tr>
+<tr>
+<td title='com.colombia.sampletests.Test1.test5()'><b>test5</b><br>Test class: com.colombia.sampletests.Test1</td>
+<td><div><pre>java.lang.NoClassDefFoundError: Could not initialize class com.colombia.extentreports.ExtentTestManager
+	at com.colombia.listeners.TestListener.onTestStart(TestListener.java:16)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 7 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1328718765", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1328718765'><pre>java.lang.NoClassDefFoundError: Could not initialize class com.colombia.extentreports.ExtentTestManager
+	at com.colombia.listeners.TestListener.onTestStart(TestListener.java:16)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1739)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1714)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:640)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.colombia.sampletests.Test1@42e26948</td></tr>
+<tr>
+<td title='com.colombia.sampletests.Test1.test5()'><b>test5</b><br>Test class: com.colombia.sampletests.Test1</td>
+<td><div><pre>java.lang.NoClassDefFoundError: Could not initialize class com.colombia.extentreports.ExtentTestManager
+	at com.colombia.listeners.TestListener.onTestFailure(TestListener.java:31)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 7 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1802066694", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1802066694'><pre>java.lang.NoClassDefFoundError: Could not initialize class com.colombia.extentreports.ExtentTestManager
+	at com.colombia.listeners.TestListener.onTestFailure(TestListener.java:31)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1731)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1714)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.colombia.sampletests.Test1@42e26948</td></tr>
+<tr>
+<td title='com.colombia.sampletests.Test2.test5()'><b>test5</b><br>Test class: com.colombia.sampletests.Test2</td>
+<td><div><pre>java.lang.NoClassDefFoundError: Could not initialize class com.colombia.extentreports.ExtentTestManager
+	at com.colombia.listeners.TestListener.onTestStart(TestListener.java:16)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 7 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1293677337", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1293677337'><pre>java.lang.NoClassDefFoundError: Could not initialize class com.colombia.extentreports.ExtentTestManager
+	at com.colombia.listeners.TestListener.onTestStart(TestListener.java:16)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1739)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1714)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:640)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.colombia.sampletests.Test2@57baeedf</td></tr>
+<tr>
+<td title='com.colombia.sampletests.Test2.test5()'><b>test5</b><br>Test class: com.colombia.sampletests.Test2</td>
+<td><div><pre>java.lang.NoClassDefFoundError: Could not initialize class com.colombia.extentreports.ExtentTestManager
+	at com.colombia.listeners.TestListener.onTestFailure(TestListener.java:31)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 7 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace116734858", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace116734858'><pre>java.lang.NoClassDefFoundError: Could not initialize class com.colombia.extentreports.ExtentTestManager
+	at com.colombia.listeners.TestListener.onTestFailure(TestListener.java:31)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1731)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1714)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.colombia.sampletests.Test2@57baeedf</td></tr>
+</table><p>
+</body>
+</html>

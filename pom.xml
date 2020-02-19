@@ -37,8 +37,8 @@
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>3.8.1</version>
 				<configuration>
-					<source>1.6</source>
-					<target>1.6</target>
+					<source>1.8</source>
+					<target>1.8</target>
 				</configuration>
 			</plugin>
 
@@ -57,9 +57,10 @@
 						<inherited>true</inherited>
 						<configuration>
 							<!-- From Email address -->
-							<from>mia27dec@gmail.com</from>
+							<!-- <from>mia27dec@gmail.com</from> -->
+							<from>automation27dec@gmail.com</from>
 							<!-- Email subject -->
-							<subject>Eagle Portal Test Automation Report</subject>
+							<subject>Colombia-System Test Automation Report</subject>
 							<!-- Fail the build if the mail does not reach -->
 							<failonerror>true</failonerror>
 							<!-- Email Body Content -->
@@ -74,17 +75,20 @@
 							<!-- host -->
 							<mailhost>smtp.gmail.com</mailhost>
 							<!-- port of the host -->
+							<!-- <mailport>465</mailport> -->
 							<mailport>465</mailport>
 							<mailssl>true</mailssl>
 							<mailAltConfig>true</mailAltConfig>
 
 							<!-- Email Authentication(USername and Password) -->
-							<mailuser>mia27dec@gmail.com</mailuser>
+							<!-- <mailuser>mia27dec@gmail.com</mailuser> -->
+							<mailuser>automation27dec@gmail.com</mailuser>
 							<mailpassword>MIA@27dec</mailpassword>
 
 							<receivers>
 								<!-- To Email address -->
 								<receiver>mia27dec@gmail.com</receiver>
+								<receiver>automation27dec@gmail.com</receiver>
 							</receivers>
 
 							<fileSets>
@@ -93,7 +97,7 @@
 									<directory>C://Users//irfan//git//colombia-project//TestReport</directory>
 									<includes>
 										<!-- Report file name -->
-										<include>Eagle-Portal-Test-Automaton-Report.html</include>
+										<include>Colombia-System-Test-Automaton-Report.html</include>
 									</includes>
 									<!-- Use Regular Expressions like **/*.html if you want all the 
 										html files to send -->
