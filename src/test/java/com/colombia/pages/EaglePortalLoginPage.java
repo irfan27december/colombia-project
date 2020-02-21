@@ -3,13 +3,10 @@
  */
 package com.colombia.pages;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.seleniumhq.jetty9.servlet.jmx.HolderMBean;
-import org.testng.Assert;
 
 import com.colombia.utilities.ReadProperties;
 

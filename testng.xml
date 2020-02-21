@@ -11,8 +11,9 @@
 	<test name="Colombia System Automation Tests">
 		<classes>
 			<class name="com.colombia.seleniumtests.EaglePortalLoginTest" />
-			<class name="com.colombia.sampletests.Test1" />
-			<class name="com.colombia.sampletests.Test2" />
+			<class name="com.colombia.seleniumtests.EaglePortalSetUpTest" />
+			<!-- <class name="com.colombia.sampletests.Test1" />
+			<class name="com.colombia.sampletests.Test2" /> -->
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->

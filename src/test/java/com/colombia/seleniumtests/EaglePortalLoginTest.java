@@ -3,10 +3,6 @@
  */
 package com.colombia.seleniumtests;
 
-import java.util.Properties;
-
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 

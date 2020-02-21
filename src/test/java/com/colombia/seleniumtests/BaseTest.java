@@ -21,6 +21,7 @@ import org.testng.annotations.Parameters;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.colombia.pages.EaglePortalLoginPage;
+import com.colombia.pages.EaglePortalSetUpPage;
 import com.colombia.utilities.ReadProperties;
 
 
@@ -37,6 +38,8 @@ public class BaseTest {
 	public static WebDriver driver = null;
 	ReadProperties properties = new ReadProperties();
 	protected EaglePortalLoginPage eaglePortalLoginPage;
+	protected EaglePortalSetUpPage eaglePortalSetUpPage;
+	
 	public static final String testDataExcelFileName = "testdata.xlsx";
 	/**
 	 * @author irfan
@@ -96,7 +99,7 @@ public class BaseTest {
 	@BeforeClass
 	public void initialize(@Optional("ChromeSuite") String SuiteName) {
 		eaglePortalLoginPage = new EaglePortalLoginPage(driver);
-		
+		eaglePortalSetUpPage = new EaglePortalSetUpPage(driver);
 	}
 	
 	
