@@ -32,9 +32,13 @@ public class EaglePortalLoginPage{
 	}
 
 	//Using FindBy for locating elements
-	@FindBy(xpath = "//input[@id='textfield-1025-inputEl']") private WebElement eagleUserNameField;	
-	@FindBy(xpath = "//input[@id='textfield-1026-inputEl']") private WebElement eaglePasswordField;
-	@FindBy(xpath = "//span[@id='button-1031-btnEl']") private WebElement loginButton;
+	//@FindBy(xpath = "//input[@id='textfield-1025-inputEl']") private WebElement eagleUserNameField;	
+	@FindBy(xpath = "//input[@type='text' and @name='username']") private WebElement eagleUserNameField;	
+	 
+	//@FindBy(xpath = "//input[@id='textfield-1026-inputEl']") private WebElement eaglePasswordField;
+	@FindBy(xpath = "//input[@type='password' and @name='password']") private WebElement eaglePasswordField;	
+	//@FindBy(xpath = "//span[@id='button-1031-btnEl']") private WebElement loginButton;
+	@FindBy(xpath = "//span[text()='Login']") private WebElement loginButton;
 
 
 	//Method to login Eagle Portal
