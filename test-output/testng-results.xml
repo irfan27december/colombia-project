@@ -1,44 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
+<testng-results skipped="0" failed="1" ignored="0" total="2" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="71" started-at="2020-01-05T17:51:07Z" finished-at="2020-01-05T17:51:07Z">
+  <suite name="Default suite" duration-ms="5488" started-at="2020-02-23T16:38:50Z" finished-at="2020-02-23T16:38:55Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="71" started-at="2020-01-05T17:51:07Z" finished-at="2020-01-05T17:51:07Z">
+    <test name="Default test" duration-ms="5488" started-at="2020-02-23T16:38:50Z" finished-at="2020-02-23T16:38:55Z">
       <class name="com.colombia.seleniumtests.EaglePortalLoginTest">
-        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.String)[pri:0, instance:com.colombia.seleniumtests.EaglePortalLoginTest@42d80b78]" name="setUp" is-config="true" duration-ms="5336" started-at="2020-01-05T23:21:02Z" finished-at="2020-01-05T23:21:07Z">
+        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.String)[pri:0, instance:com.colombia.seleniumtests.EaglePortalLoginTest@53b32d7]" name="setUp" is-config="true" duration-ms="11855" started-at="2020-02-23T22:08:38Z" finished-at="2020-02-23T22:08:50Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[chromedriver]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[drivers/chromedriver.exe]]>
+                <![CDATA[ChromeSuite]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="initialize()[pri:0, instance:com.colombia.seleniumtests.EaglePortalLoginTest@42d80b78]" name="initialize" is-config="true" duration-ms="41" started-at="2020-01-05T23:21:07Z" finished-at="2020-01-05T23:21:07Z">
+        <test-method status="PASS" signature="initialize(java.lang.String)[pri:0, instance:com.colombia.seleniumtests.EaglePortalLoginTest@53b32d7]" name="initialize" is-config="true" duration-ms="31" started-at="2020-02-23T22:08:50Z" finished-at="2020-02-23T22:08:50Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ChromeSuite]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method status="FAIL" signature="accessEagleLoginInPage()[pri:0, instance:com.colombia.seleniumtests.EaglePortalLoginTest@42d80b78]" name="accessEagleLoginInPage" duration-ms="7" started-at="2020-01-05T23:21:07Z" finished-at="2020-01-05T23:21:07Z">
-          <exception class="java.lang.Error">
+        <test-method status="PASS" signature="accessEagleLoginInPage()[pri:0, instance:com.colombia.seleniumtests.EaglePortalLoginTest@53b32d7]" name="accessEagleLoginInPage" duration-ms="5442" started-at="2020-02-23T22:08:50Z" finished-at="2020-02-23T22:08:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- accessEagleLoginInPage -->
+        <test-method status="FAIL" signature="eagleFailedTest()[pri:1, instance:com.colombia.seleniumtests.EaglePortalLoginTest@53b32d7]" name="eagleFailedTest" duration-ms="0" started-at="2020-02-23T22:08:55Z" finished-at="2020-02-23T22:08:55Z">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[Unresolved compilation problem: 
-	Type mismatch: cannot convert from void to String
-]]>
+              <![CDATA[expected [BuddiFail] but found [Buddi]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.Error: Unresolved compilation problem: 
-	Type mismatch: cannot convert from void to String
-
-	at com.colombia.seleniumtests.EaglePortalLoginTest.accessEagleLoginInPage(EaglePortalLoginTest.java:27)
+              <![CDATA[java.lang.AssertionError: expected [BuddiFail] but found [Buddi]
+	at org.testng.Assert.fail(Assert.java:93)
+	at org.testng.Assert.failNotEquals(Assert.java:512)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:134)
+	at org.testng.Assert.assertEquals(Assert.java:115)
+	at org.testng.Assert.assertEquals(Assert.java:189)
+	at org.testng.Assert.assertEquals(Assert.java:199)
+	at com.colombia.seleniumtests.EaglePortalLoginTest.eagleFailedTest(EaglePortalLoginTest.java:32)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -66,14 +79,14 @@
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.Error -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- accessEagleLoginInPage -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.colombia.seleniumtests.EaglePortalLoginTest@42d80b78]" name="tearDown" is-config="true" duration-ms="704" started-at="2020-01-05T23:21:07Z" finished-at="2020-01-05T23:21:08Z">
+        </test-method> <!-- eagleFailedTest -->
+        <test-method status="PASS" signature="clean()[pri:0, instance:com.colombia.seleniumtests.EaglePortalLoginTest@53b32d7]" name="clean" is-config="true" duration-ms="5520" started-at="2020-02-23T22:08:55Z" finished-at="2020-02-23T22:09:01Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
+        </test-method> <!-- clean -->
       </class> <!-- com.colombia.seleniumtests.EaglePortalLoginTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

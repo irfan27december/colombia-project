@@ -5,13 +5,17 @@
 		<listener class-name="com.colombia.listeners.TestListener" />
 	</listeners>
 
-	<parameter name="browser" value="chrome"></parameter>
+	<parameter name="browser" value="chromedriver"></parameter>
 	<parameter name="driverPath" value="C:\\Users\\irfan\\git\\colombia-project\\drivers\\chromedriver.exe"></parameter>
+	
+	<!-- <parameter name="browserDriver" value="chromedriver"></parameter> -->
 
 	<test name="Colombia System Automation Tests">
 		<classes>
 			<class name="com.colombia.seleniumtests.EaglePortalLoginTest" />
 			<class name="com.colombia.seleniumtests.EaglePortalSetUpTest" />
+			<class name="com.colombia.extentreports.ExtentTestManager" />
+			
 			<!-- <class name="com.colombia.sampletests.Test1" />
 			<class name="com.colombia.sampletests.Test2" /> -->
 		</classes>

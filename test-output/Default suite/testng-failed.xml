@@ -5,10 +5,10 @@
     <classes>
       <class name="com.colombia.seleniumtests.EaglePortalLoginTest">
         <methods>
-          <include name="tearDown"/>
+          <include name="eagleFailedTest"/>
           <include name="setUp"/>
           <include name="initialize"/>
-          <include name="accessEagleLoginInPage"/>
+          <include name="clean"/>
         </methods>
       </class> <!-- com.colombia.seleniumtests.EaglePortalLoginTest -->
     </classes>
